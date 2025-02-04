@@ -6,8 +6,9 @@ This application is a hybrid MPA and SPA. It reuses all of the login stuff that 
 
 ## Creating a new application
 1. Clone the repo `git clone git@github.com:dittonjs/2610DjangoViteStarter.git <your-new-project-name>`. Replace `<your-new-project-name>` with the name you want give to your project.
-2. Open the pyproject.toml file and change the `name` property. You should use `-` to separate words in your name for this property.
-3. This project was set up using Python 3.11. You might have an older version installed. If you run into an error later that says that your activated Python version isn't compatible, the in the pyproject.toml file, just change the version there to match the version that you have installed. If you do this, you need to make sure that the lock file gets regenerated. You can do this by running `poetry lock --no-update` or by simply deleting the poetry.lock file (it will get regenerated when you run poetry install)/
+   - If you are using GitHub for version control, a better option would be to fork the repository instead of clone it.
+3. Open the pyproject.toml file and change the `name` property. You should use `-` to separate words in your name for this property.
+4. This project was set up using Python 3.11. You might have an older version installed. If you run into an error later that says that your activated Python version isn't compatible, the in the pyproject.toml file, just change the version there to match the version that you have installed. If you do this, you need to make sure that the lock file gets regenerated. You can do this by running `poetry lock --no-update` or by simply deleting the poetry.lock file (it will get regenerated when you run poetry install)/
 
 ## Initial Setup
 1. Change the name property in the `pyproject.toml` file to be something unique to your project.
@@ -22,3 +23,6 @@ This application is a hybrid MPA and SPA. It reuses all of the login stuff that 
 1. In the `client` directory run `npm run dev`
 2. In the `_server` directory (with your poetry env activated) run `python manage.py runserver`
 3. Visit your application at `http://localhost:8000`
+
+## Using this project for future classes/personal projects
+Many students in the past have chosen to use this starter app template for projects in other classes like CS3450 and for personal projects. I strongly encourage you to do so! Please check with your other instructors before you use this project as a starting point for their classes. You may also want to add your name to the author field in the `pyproject.toml` file.
